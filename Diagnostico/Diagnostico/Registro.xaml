@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Diagnostico.Registro">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            
+            
+            <Label Text="Nuevo Usuario" />
+
+            <Entry x:Name="nombre" Placeholder="Ingrese Nombre"> </Entry>
+            <Entry x:Name="apellido" Placeholder="Ingrese Apellido"> </Entry>
+            <Entry x:Name="diagnosticoinicial" Placeholder="Diagnostico Inicial"></Entry>
+            <Button Text="Registrar" Clicked="registrar" >  </Button>            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

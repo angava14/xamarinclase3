@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Diagnostico.Diagnosticos">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" >
+                <Button Clicked="inicio" Text="Inicio"></Button>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Diagnosticos" />
+            <Button Clicked="agregardiag" Text="+"></Button>
+            
+            </StackLayout>
+
+            <ScrollView  VerticalOptions="FillAndExpand">
+
+                <ListView x:Name="listadiagnosticos" ItemsSource="{Binding}" ItemSelected="editardiag" >
+                    <ListView.ItemTemplate>
+
+                        <DataTemplate>
+
+
+                            <TextCell Text="{Binding}" ></TextCell>
+
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
